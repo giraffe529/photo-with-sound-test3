@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>福岡 神社 音写真</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="stylesheet" href="style1.css">
+    <script src="script.js" defer></script>
+  </head>
+<body class="main-page">
+
+   <!-- ローディング画面 -->
+   <div id="loading">
+    <p class="loading-text">LOADING</p>
+    <div class="sk-cube-grid">
+      <div class="sk-cube sk-cube1"></div>
+      <div class="sk-cube sk-cube2"></div>
+      <div class="sk-cube sk-cube3"></div>
+      <div class="sk-cube sk-cube4"></div>
+      <div class="sk-cube sk-cube5"></div>
+      <div class="sk-cube sk-cube6"></div>
+      <div class="sk-cube sk-cube7"></div>
+      <div class="sk-cube sk-cube8"></div>
+      <div class="sk-cube sk-cube9"></div>
+    </div>
+  </div>
+
+  <main>
+    <div id="gallery"></div>
+  </main>
+
+  <header class="main-header">
+    <nav>
+      <ul>
+        <li><a href="index.html">メイン</a></li>
+        <li><a href="photo with sound.html">音写真</a></li>
+        <li><a href="map.html">MAP</a></li>
+        <li><a href="gallery.html">ギャラリー</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <main class="gallery">
+      <section>
+        <h2>愛宕神社</h2>
+        <div class="photo-row">
+          <a href="slideshow/atago.html"><img src="assets/img/atago1.jpg" /></a>
+          <a href="slideshow/atago.html"><img src="assets/img/atago2.jpg" /></a>
+        </div>
+      </section>
+  
+      <section>
+        <h2>警固神社</h2>
+        <div class="photo-row">
+          <a href="slideshow/kego.html"><img src="assets/img/kego1.jpg" /></a>
+          <a href="slideshow/kego.html"><img src="assets/img/kego2.jpg" /></a>
+        </div>
+      </section>
+    </main>
+  </body>
+  </html>

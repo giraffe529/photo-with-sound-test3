@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>福岡 神社 音写真</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="stylesheet" href="style1.css">
+    <script src="script.js" defer></script>
+  </head>
+<body class="main-page">
+  <header class="main-header">
+    <nav>
+      <ul>
+        <li><a href="index.html">メイン</a></li>
+        <li><a href="photo with sound.html">音写真</a></li>
+        <li><a href="map.html">MAP</a></li>
+        <li><a href="gallery.html">ギャラリー</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="slideshow">
+    <img src="images/DSC02757.JPG" alt="1" class="slide" />
+    <img src="images/img11.jpg" alt="2" class="slide" />
+    <img src="images/DSC_0194.JPG" alt="3" class="slide" />
+    <img src="images/DSC02434.JPG" alt="4" class="slide" />
+    <img src="images/DSC02687.JPG" alt="5" class="slide" />
+    <!-- 他の画像も追加可能 -->
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let index = 0;
+
+    function showSlide() {
+      slides.forEach((img, i) => {
+        img.style.opacity = i === index ? 1 : 0;
+      });
+      index = (index + 1) % slides.length;
+    }
+
+    setInterval(showSlide, 4000);
+    showSlide();
+  </script>
+</body>
+</html>
